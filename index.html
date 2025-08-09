@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ranjith Kumar | Portfolio</title>
+  <!-- <link rel="stylesheet" href="stylesheet.css" /> -->
+
+
+<!-- Google Fonts: Montserrat (for name), Poppins (subtitles), Roboto (body) -->
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Poppins:wght@400;600&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="stylesheet.css" />
+
+
+  <style>
+    html { scroll-behavior: smooth; }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+    <a href="#home" class="logo">Portfolio</a>
+    <nav class="navbar">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- HOME SECTION -->
+  <section id="home" class="home section">
+    <div class="container home-container">
+      <div class="home-text">
+        <h1 class="fade-in">Ranjith Kumar</h1>
+        <h2 class="slide-up">Bringing Ideas to Life Through Code</h2>
+        <h3 class="slide-up delay">A Full Stack Developer & AI Engineer</h3>
+        <p class="fade-in delay">
+          I design and build end-to-end applications with intelligent systems.<br>
+          Skilled in web development, machine learning, and crafting smart user experiences.
+        </p>
+      </div>
+      <div class="home-img">
+        <img src="images/ranjithjpg.jpg" alt="Ranjith Kumar" />
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT SECTION -->
+  <section id="about" class="about-section">
+    <div class="about-container">
+      <div class="profile-pic">
+        <img src="images/ranjithjpg.jpg" alt="Ranjith Kumar" />
+      </div>
+      <div class="about-content">
+        <h2>About <span class="highlight">Me</span></h2>
+        <h3>Full Stack Developer!</h3>
+        <p>
+          I am a passionate Full Stack Developer & AIML Enthusiast currently pursuing my 5th semester in 
+          Artificial Intelligence and Machine Learning at Srinivas Institute of Technology. 
+        </p>
+        <p>
+          My expertise includes AI-powered applications, machine learning algorithms,
+          and end-to-end system design. I create websites, apps, and intelligent solutions 
+          combining creativity with logical problem-solving.
+        </p>
+        <p>
+          I am a fast learner, eager to explore new technologies, and committed to delivering 
+          innovative, data-driven solutions for real-world challenges.
+        </p>
+        <button class="about-btn">More About Me</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS SECTION -->
+  <section id="skills" class="section skills">
+    <div class="container">
+      <h2>Skills</h2>
+      <ul>
+        <li><strong>Web Development:</strong> HTML, CSS, JavaScript, React</li>
+        <li><strong>Backend:</strong> Node.js, Express</li>
+        <li><strong>Database:</strong> MongoDB, MySQL</li>
+        <li><strong>AI/ML:</strong> Python, TensorFlow, Scikit-learn</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- PORTFOLIO SECTION -->
+  <section id="portfolio" class="section portfolio">
+    <div class="container">
+      <h2>Portfolio</h2>
+      <div class="portfolio-grid">
+        <div class="project-card">
+          <img src="images/project1.jpg" alt="Project 1" />
+          <h3>Coffee Website</h3>
+          <p>☕ Coffee shop landing page built with HTML, CSS, JS featuring smooth animations and responsive design.</p>
+        </div>
+        <div class="project-card">
+          <img src="images/project2.jpg" alt="Project 2" />
+          <h3>Breathing App</h3>
+          <p>🌬️ Interactive breathing exercise app with guided animations for mindfulness.</p>
+        </div>
+        <div class="project-card">
+          <img src="images/project3.jpg" alt="Project 3" />
+          <h3>Portfolio</h3>
+          <p>💼 Personal portfolio site highlighting skills, projects, and contact info with modern UI.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section id="contact" class="section contact">
+    <div class="container">
+      <h2>Contact Me</h2>
+      <form id="contactForm">
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <textarea placeholder="Your Message" rows="5" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+
+      <script>
+        document.getElementById("contactForm").addEventListener("submit", function(event) {
+        event.preventDefault(); // stops default form submission
+        // You can also send form data here using fetch() if needed
+        location.reload(); // refreshes the page
+      });
+      </script>
+
+      <div class="contact-info">
+        <p>Email: ranjithsuvarna525@gmail.com</p>
+        <p>LinkedIn: <a href="https://linkedin.com/in/ranjith-kumar" target="_blank">linkedin.com/in/ranjith-kumar</a></p>
+      </div>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+  
+
+</body>
+</html>

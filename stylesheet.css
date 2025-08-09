@@ -1,0 +1,172 @@
+/* RESET */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  line-height: 1.6;
+  background: #020629;
+  color: #fff;
+}
+
+/* HEADER */
+.header {
+  display: flex; justify-content: space-between; align-items: center;
+  padding: 20px 40px; background: #000; position: sticky; top: 0; z-index: 1000;
+}
+
+.logo {
+  font-size: 1.8rem; font-weight: bold; color: #fff; text-decoration: none;
+}
+
+.navbar a {
+  display: inline-block;
+  padding: 10px 20px;
+  margin-left: 10px;
+  background: #ff9800;
+  color: white;
+  border-radius: 30px;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.navbar a:hover { background: #e68a00; transform: translateY(-3px); }
+
+/* SECTIONS */
+.section { padding: 60px 20px; }
+.container { max-width: 1100px; margin: auto; }
+
+/* HOME */
+.home-container {
+  display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap;
+}
+
+.home-text { flex: 1; padding-right: 20px; }
+
+/* .home h1 { font-size: 2.8rem; color: #20e3b2; }
+.home h2 { font-size: 1.5rem; color: #ff9800; margin-top: 10px; }
+.home h3 { font-size: 1.2rem; color: #b3b3ff; margin-top: 10px; }
+.home p { margin-top: 15px; font-size: 1rem; } */
+
+/* HOME — fonts & sizes */
+.home h1 {
+  font-family: 'Montserrat', 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 2.8rem;
+  color: #20e3b2;
+}
+
+.home h2 {
+  font-family: 'Poppins', 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 1.5rem;
+  margin-top: 10px;
+  color: #ff9800;
+}
+
+.home h3 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 1.15rem;
+  margin-top: 8px;
+  color: #b3b3ff;
+}
+
+.home p {
+  font-family: 'Roboto', Arial, sans-serif;
+  font-weight: 300;
+  font-size: 1rem;
+  margin-top: 15px;
+  line-height: 1.6;
+  color: #e6f7f5; /* subtle off-white for readability on dark bg */
+}
+
+.home-img {
+  flex: 1; text-align: center;
+}
+
+.home-img img {
+  width: 300px; height: 300px; border-radius: 50%;
+  border: 5px solid #ff9800; object-fit: cover;
+  box-shadow: 0 0 30px #33ffe6, 0 0 50px #4628a5;
+  animation: neon-glow 2s infinite alternate;
+}
+
+@keyframes neon-glow {
+  from { box-shadow: 0 0 30px #33ffe6, 0 0 50px #4628a5; }
+  to { box-shadow: 0 0 50px #33ffe6, 0 0 80px #4628a5; }
+}
+
+/* ABOUT */
+.about-section { background: #08182f; padding: 60px 0; }
+.about-container {
+  display: flex; gap: 60px; flex-wrap: wrap; justify-content: center; align-items: center;
+}
+
+.profile-pic img {
+  width: 250px; height: 250px; border-radius: 50%; object-fit: cover;
+  border: 5px solid #ff9800;
+  box-shadow: 0 0 30px #33ffe6, 0 0 50px #4628a5;
+  animation: neon-glow 2s infinite alternate;
+}
+
+.about-content { max-width: 500px; }
+.about-content h2 { font-size: 2.4rem; }
+.highlight { color: #20e3b2; }
+.about-content h3 { font-size: 1.4rem; margin-bottom: 15px; }
+.about-content p { margin-bottom: 15px; line-height: 1.8; text-align: justify; }
+.about-btn {
+  background: linear-gradient(90deg, #20e3b2, #4628a5);
+  color: #fff; border: none; padding: 12px 28px; border-radius: 50px;
+  font-weight: bold; cursor: pointer;
+  transition: all 0.3s ease;
+}
+.about-btn:hover {
+  background: linear-gradient(90deg, #4628a5, #20e3b2);
+  box-shadow: 0 0 40px #4628a5, 0 0 40px #20e3b2;
+}
+
+/* SKILLS */
+.skills ul { list-style: none; }
+.skills li {
+  background: #000; padding: 10px; margin-bottom: 8px;
+  border-left: 4px solid #ff9800; transition: transform 0.2s ease;
+}
+.skills li:hover { transform: translateX(5px); }
+
+/* PORTFOLIO */
+.portfolio-grid {
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px;
+}
+.project-card {
+  background: #070000; padding: 15px; border-radius: 8px; text-align: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2); transition: transform 0.3s ease;
+}
+.project-card img { width: 100%; border-radius: 5px; }
+.project-card:hover { transform: translateY(-5px); }
+
+/* CONTACT */
+.contact form { display: flex; flex-direction: column; }
+.contact input, .contact textarea {
+  margin-bottom: 10px; padding: 10px; border: 1px solid #ccc; border-radius: 4px;
+}
+.contact button {
+  padding: 10px; background: #ff9800; color: white;
+  border: none; cursor: pointer; transition: background 0.3s ease;
+}
+.contact button:hover { background: #e68a00; }
+.contact-info { margin-top: 20px; }
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .home-container, .about-container { flex-direction: column; text-align: center; }
+  .home-text { padding-right: 0; }
+}
+
+/* Import Google Fonts (must be at top of the CSS file) */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Poppins:wght@400;600&family=Roboto:wght@300;400&display=swap');
